@@ -11,4 +11,10 @@
 
 
 ##
-Python3实现、调用openCV、Pillow、Pyqt5、numpy,源代码够60页
+**源代码够60页**
+
+
+
+
+
+
