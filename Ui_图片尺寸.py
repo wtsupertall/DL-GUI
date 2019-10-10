@@ -6,15 +6,13 @@
 #
 # WARNING! All changes made in this file will be lost!
 
-from PyQt5 import QtCore, QtGui, QtWidgets, Qt
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
+from PyQt5 import QtCore, QtGui, QtWidgets
 
-class Ui_MainWindow(object):
-    def setupUi(self, MainWindow):
-        MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(791, 605)
-        self.centralWidget = QtWidgets.QWidget(MainWindow)
+class Ui_PIcsize(object):
+    def setupUi(self, PIcsize):
+        PIcsize.setObjectName("PIcsize")
+        PIcsize.resize(791, 605)
+        self.centralWidget = QtWidgets.QWidget(PIcsize)
         self.centralWidget.setObjectName("centralWidget")
         self.textBrowser = QtWidgets.QTextBrowser(self.centralWidget)
         self.textBrowser.setGeometry(QtCore.QRect(0, 0, 181, 581))
@@ -43,47 +41,47 @@ class Ui_MainWindow(object):
         self.toolButton_5 = QtWidgets.QToolButton(self.gridLayoutWidget)
         self.toolButton_5.setObjectName("toolButton_5")
         self.gridLayout.addWidget(self.toolButton_5, 0, 4, 1, 1)
-        MainWindow.setCentralWidget(self.centralWidget)
-        self.menuBar = QtWidgets.QMenuBar(MainWindow)
+        PIcsize.setCentralWidget(self.centralWidget)
+        self.menuBar = QtWidgets.QMenuBar(PIcsize)
         self.menuBar.setGeometry(QtCore.QRect(0, 0, 791, 23))
         self.menuBar.setObjectName("menuBar")
         self.menu = QtWidgets.QMenu(self.menuBar)
         self.menu.setObjectName("menu")
-        MainWindow.setMenuBar(self.menuBar)
-        self.action = QtWidgets.QAction(MainWindow)
+        PIcsize.setMenuBar(self.menuBar)
+        self.action = QtWidgets.QAction(PIcsize)
         self.action.setObjectName("action")
-        self.action_2 = QtWidgets.QAction(MainWindow)
+        self.action_2 = QtWidgets.QAction(PIcsize)
         self.action_2.setObjectName("action_2")
-        self.action_3 = QtWidgets.QAction(MainWindow)
+        self.action_3 = QtWidgets.QAction(PIcsize)
         self.action_3.setObjectName("action_3")
         self.menu.addAction(self.action_3)
         self.menu.addAction(self.action)
         self.menu.addAction(self.action_2)
         self.menuBar.addAction(self.menu.menuAction())
 
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.retranslateUi(PIcsize)
+        QtCore.QMetaObject.connectSlotsByName(PIcsize)
 
-    def retranslateUi(self, MainWindow):
+    def retranslateUi(self, PIcsize):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.toolButton_2.setText(_translate("MainWindow", "工具2"))
-        self.toolButton.setText(_translate("MainWindow", "工具1"))
-        self.toolButton_3.setText(_translate("MainWindow", "工具3"))
-        self.toolButton_4.setText(_translate("MainWindow", "工具4"))
-        self.toolButton_5.setText(_translate("MainWindow", "工具5"))
-        self.menu.setTitle(_translate("MainWindow", "文件"))
-        self.action.setText(_translate("MainWindow", "保存"))
-        self.action_2.setText(_translate("MainWindow", "退出"))
-        self.action_3.setText(_translate("MainWindow", "打开"))
+        PIcsize.setWindowTitle(_translate("PIcsize", "MainWindow"))
+        self.toolButton_2.setText(_translate("PIcsize", "工具2"))
+        self.toolButton.setText(_translate("PIcsize", "工具1"))
+        self.toolButton_3.setText(_translate("PIcsize", "工具3"))
+        self.toolButton_4.setText(_translate("PIcsize", "工具4"))
+        self.toolButton_5.setText(_translate("PIcsize", "工具5"))
+        self.menu.setTitle(_translate("PIcsize", "文件"))
+        self.action.setText(_translate("PIcsize", "保存"))
+        self.action_2.setText(_translate("PIcsize", "退出"))
+        self.action_3.setText(_translate("PIcsize", "打开"))
 
 
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
-    MainWindow = QtWidgets.QMainWindow()
-    ui = Ui_MainWindow()
-    ui.setupUi(MainWindow)
-    MainWindow.show()
+    PIcsize = QtWidgets.QMainWindow()
+    ui = Ui_PIcsize()
+    ui.setupUi(PIcsize)
+    PIcsize.show()
     sys.exit(app.exec_())
 

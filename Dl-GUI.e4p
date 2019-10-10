@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project Dl-GUI -->
-<!-- Saved: 2019-10-04, 20:48:16 -->
+<!-- Saved: 2019-10-10, 22:41:56 -->
 <!-- Copyright (C) 2019 ,  -->
 <Project version="5.1">
   <Language>en_US</Language>
@@ -15,13 +15,17 @@
   <Sources>
     <Source>Mainwindow.py</Source>
     <Source>Ui_Mainwindow.py</Source>
+    <Source>Ui_图片裁剪.py</Source>
     <Source>Ui_登录.py</Source>
+    <Source>Ui_裁剪区域.py</Source>
     <Source>__init__.py</Source>
     <Source>登录.py</Source>
   </Sources>
   <Forms>
     <Form>Mainwindow.ui</Form>
+    <Form>图片裁剪.ui</Form>
     <Form>登录.ui</Form>
+    <Form>裁剪区域.ui</Form>
   </Forms>
   <Others>
     <Other>.gitignore</Other>
