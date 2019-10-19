@@ -145,7 +145,7 @@ class Ui_MainWindow(object):
         self.action_15.setText(_translate("MainWindow", "退出"))
         
     def openfile(self):
-        openfile_name = QFileDialog.getOpenFileName(self,'选择文件','','Image files(*.png , *.eps)')
+        openfile_name = QFileDialog.getOpenFileName(self,'选择文件','','Image files(*.png , *.eps , *jpeg)')
 
 if __name__ == "__main__":
     import sys
