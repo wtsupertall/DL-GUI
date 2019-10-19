@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(545, 377)
+        MainWindow.resize(543, 376)
         self.centralWidget = QtWidgets.QWidget(MainWindow)
         self.centralWidget.setObjectName("centralWidget")
         self.verticalScrollBar = QtWidgets.QScrollBar(self.centralWidget)
@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
         self.graphicsView.setObjectName("graphicsView")
         MainWindow.setCentralWidget(self.centralWidget)
         self.menuBar = QtWidgets.QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 545, 23))
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 543, 23))
         self.menuBar.setObjectName("menuBar")
         self.menu = QtWidgets.QMenu(self.menuBar)
         self.menu.setObjectName("menu")
@@ -85,7 +85,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "主窗口"))
         self.menu.setTitle(_translate("MainWindow", "开始"))
         self.menu_5.setTitle(_translate("MainWindow", "帮助"))
         self.menu_6.setTitle(_translate("MainWindow", "工具"))
