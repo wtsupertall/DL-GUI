@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>545</width>
-    <height>377</height>
+    <width>543</width>
+    <height>376</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>主窗口</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QScrollBar" name="verticalScrollBar">
@@ -53,7 +53,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>545</width>
+     <width>543</width>
      <height>23</height>
     </rect>
    </property>
