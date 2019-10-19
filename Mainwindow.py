@@ -3,11 +3,13 @@
 """
 Module implementing MainWindow.
 """
-
+from PyQt5 import QtCore, QtGui, QtWidgets, Qt
+from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QMainWindow
 
-from .Ui_Mainwindow import Ui_MainWindow
+from Ui_Mainwindow import Ui_MainWindow
 
 
 class MainWindow(QMainWindow, Ui_MainWindow):
@@ -25,65 +27,17 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.setupUi(self)
     
     @pyqtSlot()
-    def on_pushButton_clicked(self):
-        """
-        Slot documentation goes here.
-        """
-        # TODO: not implemented yet
-        raise NotImplementedError
-    
-    @pyqtSlot()
     def on_pushButton_2_clicked(self):
         """
-        Slot documentation goes here.
+        打开文件
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        self.pushButton_2.clicked.connect(self.openfile)
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    ui = MainWindow()
+    ui.show()
+    sys.exit(app.exec_())
     
-    @pyqtSlot()
-    def on_pushButton_3_clicked(self):
-        """
-        Slot documentation goes here.
-        """
-        # TODO: not implemented yet
-        raise NotImplementedError
-    
-    @pyqtSlot()
-    def on_pushButton_4_clicked(self):
-        """
-        Slot documentation goes here.
-        """
-        # TODO: not implemented yet
-        raise NotImplementedError
-    
-    @pyqtSlot()
-    def on_pushButton_5_clicked(self):
-        """
-        Slot documentation goes here.
-        """
-        # TODO: not implemented yet
-        raise NotImplementedError
-    
-    @pyqtSlot()
-    def on_pushButton_6_clicked(self):
-        """
-        Slot documentation goes here.
-        """
-        # TODO: not implemented yet
-        raise NotImplementedError
-    
-    @pyqtSlot()
-    def on_pushButton_7_clicked(self):
-        """
-        Slot documentation goes here.
-        """
-        # TODO: not implemented yet
-        raise NotImplementedError
-    
-    @pyqtSlot()
-    def on_pushButton_8_clicked(self):
-        """
-        Slot documentation goes here.
-        """
-        # TODO: not implemented yet
-        raise NotImplementedError
