@@ -7,7 +7,7 @@ Module implementing UI_login.
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QDialog
 
-from .Ui_登录 import Ui_login
+from Ui_登录 import Ui_login
 
 
 class UI_login(QDialog, Ui_login):

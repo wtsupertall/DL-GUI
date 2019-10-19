@@ -11,7 +11,10 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>登录</string>
+   <string>login</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>6</number>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>

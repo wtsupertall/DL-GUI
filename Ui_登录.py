@@ -51,7 +51,8 @@ class Ui_login(object):
         self.pushButton_2.setText(_translate("login", "退出"))
         self.label.setText(_translate("login", "账号："))
         self.label_2.setText(_translate("login", "密码："))
-
+    def jump_to_main(self):
+        self.dialog.close()
 
 if __name__ == "__main__":
     import sys
