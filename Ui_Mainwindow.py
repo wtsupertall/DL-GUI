@@ -9,7 +9,6 @@ from PyQt5 import QtCore, QtGui, QtWidgets, Qt
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 
-
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
@@ -116,6 +115,8 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+       
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "主窗口"))
@@ -145,7 +146,8 @@ class Ui_MainWindow(object):
         self.action_15.setText(_translate("MainWindow", "退出"))
         
     def openfile(self):
-        openfile_name = QFileDialog.getOpenFileName(self,'选择文件','','Image files(*.png , *.eps , *jpeg)')
+        openfile_name = QFileDialog.getOpenFileName(self,'选择文件','','Image files(*.png , *.eps)')
+
 
 if __name__ == "__main__":
     import sys
