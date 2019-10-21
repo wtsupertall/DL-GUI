@@ -1,5 +1,5 @@
 from PyQt5 import  QtWidgets
-from login import dialoglogin
+from login import loglogin
 from camera1 import Dialogca
 from camera2 import Dialogca2
 from mainframe import MainWindow
@@ -7,9 +7,10 @@ from jiemian import MainWindow1
 from connect import Dialogcon
 from trans import Dialogtrans
 from save import dialogsave
-class dialoglogin(dialoglogin):
+
+class loglogin(dialoglogin):
     def __init__(self):
-        super(dialoglogin,self).__init__()
+        super(loglogin,self).__init__()
         self.setupUi(self)
         
 class Dialogca(Dialogca):
@@ -49,7 +50,7 @@ class dialogsave(dialogsave):
 
 def loginEvent(self):
         self.hide()
-        self.dia = dialoglogin()
+        self.dia = loglogin()
         self.dia.show()
         
         self.hide()
@@ -80,7 +81,7 @@ if __name__=="__main__":
     import sys
     app=QtWidgets.QApplication(sys.argv)
     login=MainWindow()
-    dial = dialoglogin()
+    dial = loglogin()
     caculate = MainWindow1()
     camera1 = Dialogca()
     camera2 = Dialogca2()
