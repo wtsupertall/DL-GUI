@@ -25,6 +25,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         """
         super(MainWindow, self).__init__(parent)
         self.setupUi(self)
+        
+    @pyqtSlot()
+    def on_pushButton_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
     
     @pyqtSlot()
     def on_pushButton_2_clicked(self):
@@ -34,17 +42,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         # TODO: not implemented yet
         self.pushButton_2.clicked.connect(self.openfile)
 
+
+
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     ui = MainWindow()
     ui.show()
     sys.exit(app.exec_())
-    
-    @pyqtSlot()
-    def on_pushButton_clicked(self):
-        """
-        Slot documentation goes here.
-        """
-        # TODO: not implemented yet
-        raise NotImplementedError
