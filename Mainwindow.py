@@ -39,7 +39,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         """
         打开文件
         """
-        # TODO: not implemented yet
         self.pushButton_2.clicked.connect(self.openfile)
 
 

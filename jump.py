@@ -1,101 +1,52 @@
-from PyQt5 import  QtWidgets
-from login import loglogin
-from camera1 import Dialogca
-from camera2 import Dialogca2
-from mainframe import MainWindow
-from jiemian import MainWindow1
-from connect import Dialogcon
-from trans import Dialogtrans
-from save import dialogsave
+from PyQt5 import QtCore, QtGui, QtWidgets
+from test import Ui_Dialog
+from Login import Ui_MainWindow_Login
+from Ui_checkFile import Ui_check_file
+from Ui_similarty import Ui_Dialog2
 
-class loglogin(dialoglogin):
+class Ui_similarty(QtWidgets.QDialog,Ui_Dialog2):
     def __init__(self):
-        super(loglogin,self).__init__()
-        self.setupUi(self)
-        
-class Dialogca(Dialogca):
-    def __init__(self):
-        super(Dialogca,self).__init__()
-        self.setupUi(self)
-        
-class Dialogca2(Dialogca2):
-    def __init__(self):
-        super(Dialogca2,self).__init__()
-        self.setupUi(self)
-        
-class Dialogcon(Dialogcon):
-     def __init__(self):
-        super(Dialogcon,self).__init__()
-        self.setupUi(self)
-        
-class Dialogtrans(Dialogtrans):
-     def __init__(self):
-        super(Dialogtrans,self).__init__()
+        super(Ui_similarty,self).__init__()
         self.setupUi(self)
 
-class jiemian(MainWindow1):
+class Ui_file(QtWidgets.QDialog,Ui_check_file):
     def __init__(self):
-        super(MainWindow1,self).__init__()
-        self.setupUi(self)   
-
-class MainWindow(MainWindow):
-    def __init__(self):
-        super(MainWindow,self).__init__()
+        super(Ui_file,self).__init__()
         self.setupUi(self)
 
-class dialogsave(dialogsave):
-     def __init__(self):
-        super(dialogsave,self).__init__()
-        self.setupUi(self)   
 
-def loginEvent(self):
+class Ui_Dialog(QtWidgets.QWidget,Ui_Dialog):
+    def __init__(self):
+        super(Ui_Dialog,self).__init__()
+        self.setupUi(self)
+
+    def checkfile(self):
         self.hide()
-        self.dia = loglogin()
+        self.c = Ui_file()
+        self.c.show()
+
+class loginWindow(QtWidgets.QMainWindow,Ui_MainWindow_Login):
+    def __init__(self):
+        super(loginWindow,self).__init__()
+        self.setupUi(self)
+    #定义登录按钮的功能
+    def loginEvent(self):
+        self.hide()
+        self.dia = Ui_Dialog()
         self.dia.show()
-        
-        self.hide()
-        self.dia1 = MainWindow1()
-        self.dia1.show()
-        
-        self.hide()
-        self.dia2 = Dialogca()
-        self.dia2.show()
-        
-        self.hide()
-        self.dia4 = Dialogca2()
-        self.dia4.show()  
-        
-        self.hide()
-        self.dia3 = Dialogcon()
-        self.dia3.show()  
-        
-        self.hide()
-        self.dia5 = Dialogtrans()
-        self.dia5.show()
-        
-        self.hide()
-        self.dia6 = dialogsave()
-        self.dia6.show()
 
+#运行窗口Login
 if __name__=="__main__":
     import sys
     app=QtWidgets.QApplication(sys.argv)
-    login=MainWindow()
-    dial = loglogin()
-    caculate = MainWindow1()
-    camera1 = Dialogca()
-    camera2 = Dialogca2()
-    connect1 = Dialogcon()
-    coordtrans = Dialogtrans()
-    save =  dialogsave()
+    login=loginWindow()
+    dial = Ui_Dialog()
+    file = Ui_file()
+    simi = Ui_similarty()
     login.show()
-    login.action_3.triggered.connect(dial.show)
-    login.actionECEF.triggered.connect(caculate.show)
-    login.action_15.triggered.connect(camera1.show)
-    login.action_17.triggered.connect(camera2.show)
-    login.action_18.triggered.connect(connect1.show)
-    login.action_4.triggered.connect(coordtrans.show)
-    login.action_5.triggered.connect(save.show)
+    login.pushButton.clicked.connect(dial.show)
+    dial.pushButton.clicked.connect(file.show)
+    dial.pushButton_2.clicked.connect(simi.show)
     sys.exit(app.exec_())
 
 
