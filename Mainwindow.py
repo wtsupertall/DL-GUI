@@ -41,3 +41,10 @@ if __name__ == "__main__":
     ui.show()
     sys.exit(app.exec_())
     
+    @pyqtSlot()
+    def on_pushButton_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
