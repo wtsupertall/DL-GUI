@@ -7,7 +7,7 @@ Module implementing login.
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QDialog
 
-from Ui_login import Ui_login
+from .Ui_login import Ui_login
 
 
 class login(QDialog, Ui_login):
@@ -32,10 +32,13 @@ class login(QDialog, Ui_login):
         # TODO: not implemented yet
         raise NotImplementedError
     
-    @pyqtSlot()
-    def on_pushButton_2_clicked(self):
+    @pyqtSlot(bool)
+    def on_textEdit_copyAvailable(self, b):
         """
         Slot documentation goes here.
+        
+        @param b DESCRIPTION
+        @type bool
         """
         # TODO: not implemented yet
         raise NotImplementedError
