@@ -7,10 +7,10 @@ Module implementing login.
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QDialog
 
-from .Ui_login import Ui_login
+from Ui_login import Ui_login
 
 
-class login(QDialog, Ui_login):
+class Dialogin(QDialog, Ui_login):
     """
     Class documentation goes here.
     """
@@ -21,7 +21,7 @@ class login(QDialog, Ui_login):
         @param parent reference to the parent widget
         @type QWidget
         """
-        super(login, self).__init__(parent)
+        super(Dialogin, self).__init__(parent)
         self.setupUi(self)
     
     @pyqtSlot()
