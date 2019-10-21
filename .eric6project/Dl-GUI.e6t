@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Tasks SYSTEM "Tasks-6.0.dtd">
 <!-- eric6 tasks file for project Dl-GUI -->
-<!-- Saved: 2019-10-19, 22:21:21 -->
+<!-- Saved: 2019-10-21, 20:01:23 -->
 <Tasks version="6.0">
   <ProjectScanFilter></ProjectScanFilter>
-  <Task priority="1" completed="False" type="1" uid="{f66a9835-1437-4ca4-bdd8-03190a054454}">
+  <Task priority="1" completed="False" type="1" uid="{6d4fb065-0d42-4fae-aa24-52929eda14bf}">
     <Summary>TODO: not implemented yet</Summary>
     <Description></Description>
-    <Created>2019-10-19, 22:21:07</Created>
+    <Created>2019-10-21, 20:00:02</Created>
     <Resource>
       <Filename>Mainwindow.py</Filename>
       <Linenumber>34</Linenumber>
     </Resource>
   </Task>
-  <Task priority="1" completed="False" type="1" uid="{0b467d8c-8004-4a63-aa08-c4fb9317efc4}">
+  <Task priority="1" completed="False" type="1" uid="{c6a1ce61-57eb-4936-8bd0-02341fe17b70}">
     <Summary>TODO: not implemented yet</Summary>
     <Description></Description>
-    <Created>2019-10-19, 22:21:07</Created>
+    <Created>2019-10-21, 20:00:02</Created>
     <Resource>
-      <Filename>登录.py</Filename>
-      <Linenumber>32</Linenumber>
+      <Filename>Mainwindow.py</Filename>
+      <Linenumber>42</Linenumber>
     </Resource>
   </Task>
 </Tasks>

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'C:\Users\wangtong\Desktop\DL-GUI\登录.ui'
+# Form implementation generated from reading ui file 'C:\Users\wangtong\Desktop\DL-GUI\login.ui'
 #
 # Created by: PyQt5 UI code generator 5.11.3
 #
@@ -12,6 +12,7 @@ class Ui_login(object):
     def setupUi(self, login):
         login.setObjectName("login")
         login.resize(289, 207)
+        login.setToolTipDuration(6)
         login.setSizeGripEnabled(True)
         self.pushButton = QtWidgets.QPushButton(login)
         self.pushButton.setGeometry(QtCore.QRect(60, 140, 75, 23))
@@ -46,13 +47,12 @@ class Ui_login(object):
 
     def retranslateUi(self, login):
         _translate = QtCore.QCoreApplication.translate
-        login.setWindowTitle(_translate("login", "登录"))
+        login.setWindowTitle(_translate("login", "login"))
         self.pushButton.setText(_translate("login", "登录"))
         self.pushButton_2.setText(_translate("login", "退出"))
         self.label.setText(_translate("login", "账号："))
         self.label_2.setText(_translate("login", "密码："))
-    def jump_to_main(self):
-        self.dialog.close()
+
 
 if __name__ == "__main__":
     import sys
