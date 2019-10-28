@@ -3,14 +3,14 @@
 """
 Module implementing login.
 """
-
 from PyQt5.QtCore import pyqtSlot
+from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog
+from PyQt5.QtWidgets import QMainWindow
+from Ui_login import Ui_dialogin
 
-from Ui_login import Ui_login
 
-
-class Dialogin(QDialog, Ui_login):
+class dialogin(QDialog, Ui_dialogin):
     """
     Class documentation goes here.
     """
@@ -21,7 +21,7 @@ class Dialogin(QDialog, Ui_login):
         @param parent reference to the parent widget
         @type QWidget
         """
-        super(Dialogin, self).__init__(parent)
+        super(dialogin, self).__init__(parent)
         self.setupUi(self)
     
     @pyqtSlot()
@@ -32,13 +32,18 @@ class Dialogin(QDialog, Ui_login):
         # TODO: not implemented yet
         raise NotImplementedError
     
-    @pyqtSlot(bool)
-    def on_textEdit_copyAvailable(self, b):
+    @pyqtSlot()
+    def on_pushButton_2_clicked(self):
         """
         Slot documentation goes here.
-        
-        @param b DESCRIPTION
-        @type bool
         """
         # TODO: not implemented yet
         raise NotImplementedError
+    
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    ui = dialogin()
+    ui.show()
+    sys.exit(app.exec_())

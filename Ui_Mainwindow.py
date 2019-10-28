@@ -5,9 +5,8 @@
 # Created by: PyQt5 UI code generator 5.11.3
 #
 # WARNING! All changes made in this file will be lost!
-from PyQt5 import QtCore, QtGui, QtWidgets, Qt
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
+
+from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -112,10 +111,10 @@ class Ui_MainWindow(object):
         self.action_14.setObjectName("action_14")
         self.action_15 = QtWidgets.QAction(MainWindow)
         self.action_15.setObjectName("action_15")
-        self.retranslateUi(MainWindow)
-        QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-       
+        self.retranslateUi(MainWindow)
+        self.pushButton_4.clicked.connect(self.graphicsView.close)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
@@ -144,9 +143,6 @@ class Ui_MainWindow(object):
         self.action_13.setText(_translate("MainWindow", "保存"))
         self.action_14.setText(_translate("MainWindow", "另存为"))
         self.action_15.setText(_translate("MainWindow", "退出"))
-        
-    def openfile(self):
-        openfile_name = QFileDialog.getOpenFileName(self,'选择文件','','Image files(*.png , *.eps)')
 
 
 if __name__ == "__main__":

@@ -1,25 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Tasks SYSTEM "Tasks-6.0.dtd">
 <!-- eric6 tasks file for project Dl-GUI -->
-<!-- Saved: 2019-10-21, 20:01:23 -->
+<!-- Saved: 2019-10-28, 21:16:56 -->
 <Tasks version="6.0">
   <ProjectScanFilter></ProjectScanFilter>
-  <Task priority="1" completed="False" type="1" uid="{6d4fb065-0d42-4fae-aa24-52929eda14bf}">
+  <Task priority="1" completed="False" type="1" uid="{153c2d87-e467-45bc-bfc1-720a7c683f30}">
     <Summary>TODO: not implemented yet</Summary>
     <Description></Description>
-    <Created>2019-10-21, 20:00:02</Created>
+    <Created>2019-10-28, 20:43:06</Created>
     <Resource>
-      <Filename>Mainwindow.py</Filename>
-      <Linenumber>34</Linenumber>
+      <Filename>login.py</Filename>
+      <Linenumber>32</Linenumber>
     </Resource>
   </Task>
-  <Task priority="1" completed="False" type="1" uid="{c6a1ce61-57eb-4936-8bd0-02341fe17b70}">
+  <Task priority="1" completed="False" type="1" uid="{c9225077-878d-4501-ae2f-3133a2e03363}">
     <Summary>TODO: not implemented yet</Summary>
     <Description></Description>
-    <Created>2019-10-21, 20:00:02</Created>
+    <Created>2019-10-28, 20:43:06</Created>
+    <Resource>
+      <Filename>login.py</Filename>
+      <Linenumber>40</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="1" uid="{220425a1-edac-4b6a-8251-5ff14e74ab5e}">
+    <Summary>TODO: not implemented yet</Summary>
+    <Description></Description>
+    <Created>2019-10-28, 20:57:24</Created>
+    <Resource>
+      <Filename>picsized.py</Filename>
+      <Linenumber>32</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="1" uid="{153e763f-d55c-4d76-a137-31dc3b6fb1b6}">
+    <Summary>TODO: not implemented yet</Summary>
+    <Description></Description>
+    <Created>2019-10-28, 20:57:24</Created>
+    <Resource>
+      <Filename>picsized.py</Filename>
+      <Linenumber>40</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="1" uid="{3c216172-f744-4729-b893-d33c2c0ef7af}">
+    <Summary>TODO: not implemented yet</Summary>
+    <Description></Description>
+    <Created>2019-10-28, 20:57:24</Created>
+    <Resource>
+      <Filename>picsized.py</Filename>
+      <Linenumber>48</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="1" uid="{97088a61-340c-41db-aaff-da96e9e9eec0}">
+    <Summary>TODO: not implemented yet</Summary>
+    <Description></Description>
+    <Created>2019-10-28, 20:57:24</Created>
+    <Resource>
+      <Filename>picsized.py</Filename>
+      <Linenumber>56</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="1" uid="{0f176c25-8312-44f9-b746-05612e4e8fb4}">
+    <Summary>TODO: not implemented yet</Summary>
+    <Description></Description>
+    <Created>2019-10-28, 20:57:24</Created>
+    <Resource>
+      <Filename>picsized.py</Filename>
+      <Linenumber>64</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="1" uid="{52bf5e9d-6d16-46f1-aed5-8b1990198f10}">
+    <Summary>TODO: not implemented yet</Summary>
+    <Description></Description>
+    <Created>2019-10-28, 21:16:31</Created>
     <Resource>
       <Filename>Mainwindow.py</Filename>
-      <Linenumber>42</Linenumber>
+      <Linenumber>35</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="False" type="1" uid="{9ffd954f-4146-45b8-8ba3-221bdc8a7dfc}">
+    <Summary>TODO: not implemented yet</Summary>
+    <Description></Description>
+    <Created>2019-10-28, 21:16:31</Created>
+    <Resource>
+      <Filename>Mainwindow.py</Filename>
+      <Linenumber>49</Linenumber>
     </Resource>
   </Task>
 </Tasks>
