@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project Dl-GUI -->
-<!-- Saved: 2019-10-28, 21:16:56 -->
+<!-- Saved: 2019-10-31, 16:47:30 -->
 <!-- Copyright (C) 2019 ,  -->
 <Project version="5.1">
   <Language>en_US</Language>
@@ -15,6 +15,7 @@
   <Sources>
     <Source>Mainwindow.py</Source>
     <Source>Ui_Mainwindow.py</Source>
+    <Source>Ui_labelobj.py</Source>
     <Source>Ui_login.py</Source>
     <Source>Ui_picsized.py</Source>
     <Source>__init__.py</Source>
@@ -24,6 +25,7 @@
   </Sources>
   <Forms>
     <Form>Mainwindow.ui</Form>
+    <Form>labelobj.ui</Form>
     <Form>login.ui</Form>
     <Form>picsized.ui</Form>
   </Forms>

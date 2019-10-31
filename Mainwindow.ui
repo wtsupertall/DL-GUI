@@ -6,52 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>762</width>
-    <height>524</height>
+    <width>517</width>
+    <height>371</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>主窗口</string>
+   <string>Main</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QScrollBar" name="verticalScrollBar">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>200</y>
-      <width>16</width>
-      <height>321</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="QTextBrowser" name="textBrowser">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>40</y>
-      <width>101</width>
-      <height>481</height>
-     </rect>
-    </property>
-   </widget>
-   <widget class="QGraphicsView" name="graphicsView">
-    <property name="geometry">
-     <rect>
-      <x>120</x>
-      <y>40</y>
-      <width>641</width>
-      <height>481</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
+      <x>60</x>
+      <y>120</y>
       <width>81</width>
       <height>41</height>
      </rect>
@@ -66,49 +33,11 @@
      <string>登录</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>0</y>
-      <width>81</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Times New Roman</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>打开文件</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_3">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>0</y>
-      <width>81</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Times New Roman</family>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>保存</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
-      <x>680</x>
-      <y>0</y>
+      <x>60</x>
+      <y>190</y>
       <width>81</width>
       <height>41</height>
      </rect>
@@ -126,8 +55,8 @@
    <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>0</y>
+      <x>170</x>
+      <y>120</y>
       <width>81</width>
       <height>41</height>
      </rect>
@@ -139,14 +68,14 @@
      </font>
     </property>
     <property name="text">
-     <string>图片裁剪</string>
+     <string>图片处理</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
-      <x>320</x>
-      <y>0</y>
+      <x>280</x>
+      <y>120</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -158,14 +87,14 @@
      </font>
     </property>
     <property name="text">
-     <string>b-box 标签制作</string>
+     <string>目标检测 标签制作</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_7">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>0</y>
+      <x>280</x>
+      <y>190</y>
       <width>141</width>
       <height>41</height>
      </rect>
@@ -183,8 +112,8 @@
    <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
      <rect>
-      <x>600</x>
-      <y>0</y>
+      <x>170</x>
+      <y>190</y>
       <width>81</width>
       <height>41</height>
      </rect>
@@ -278,22 +207,5 @@
   </action>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>pushButton_4</sender>
-   <signal>clicked()</signal>
-   <receiver>graphicsView</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>713</x>
-     <y>22</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>720</x>
-     <y>97</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

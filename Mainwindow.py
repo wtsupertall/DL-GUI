@@ -40,7 +40,7 @@ class MainWindow1(QMainWindow, Ui_MainWindow):
         """
         打开文件
         """
-        self.pushButton_2.clicked.connect(self.openfile)
+        #self.pushButton_2.clicked.connect(self.openfile)
     @pyqtSlot()
     def on_pushButton_8_clicked(self):
         """
@@ -49,6 +49,37 @@ class MainWindow1(QMainWindow, Ui_MainWindow):
         # TODO: not implemented yet
         raise NotImplementedError
 
+    @pyqtSlot()
+    def on_pushButton_4_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot()
+    def on_pushButton_5_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot()
+    def on_pushButton_6_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot()
+    def on_pushButton_7_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
 
 if __name__ == "__main__":
     import sys
@@ -56,5 +87,4 @@ if __name__ == "__main__":
     ui = MainWindow1()
     ui.show()
     sys.exit(app.exec_())
-    
     

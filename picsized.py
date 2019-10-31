@@ -7,10 +7,10 @@ from PyQt5.QtCore import pyqtSlot
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog
 
-from Ui_picsized import Ui_Dialog1
+from Ui_picsized import Ui_Dialog
 
 
-class picturesize(QDialog, Ui_Dialog1):
+class picturesize(QDialog, Ui_Dialog):
     """
     Class documentation goes here.
     """

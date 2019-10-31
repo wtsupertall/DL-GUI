@@ -8,7 +8,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-class Ui_dialogin(object):
+class Ui_login(object):
     def setupUi(self, login):
         login.setObjectName("login")
         login.resize(393, 282)
@@ -64,7 +64,7 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     login = QtWidgets.QDialog()
-    ui = Ui_dialogin()
+    ui = Ui_login()
     ui.setupUi(login)
     login.show()
     sys.exit(app.exec_())
